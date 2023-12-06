@@ -4,6 +4,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.logo {
+    /* Your specific styling for this image */
+    width: auto;  /* Example: retain original width */
+    height: auto; /* Example: retain original height */
+    /* Add any other specific styles you want for this image */
+}
+
+.person {
+    display: flex;
+    align-items: center; /* This vertically centers the items */
+    margin-bottom: 20px; /* Add space between each person's section */
+}
+
+.person-image {
+    flex: 0 0 auto; /* Adjust this to control image sizing */
+    margin-right: 20px; /* Add space between the image and the text */
+}
+
+.person-image img {
+    width: 300px; /* or any size you prefer */
+    height: auto; /* to maintain aspect ratio */
+}
+
+.person-info {
+    flex: 1; /* This allows the text section to fill the remaining space */
+}
+
+/*img {
+    width: 400px; 
+    height: 600px; 
+    object-fit: cover; 
+}*/
+
 .hero{
     width: 100%;
     min-height: 100vh;

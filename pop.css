@@ -152,3 +152,27 @@ a{
     z-index: -1;
     opacity: 0.5;
 }
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a700ff;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a{
+    display: block;
+
+    text-decoration: none;
+    color: white;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

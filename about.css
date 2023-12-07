@@ -17,6 +17,23 @@
     margin-bottom: 20px; /* Add space between each person's section */
 }
 
+@media (max-width: 768px) {
+    .person {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .person img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .person {
+        text-align: left;
+    }
+}
+
 .person-image {
     flex: 0 0 auto; /* Adjust this to control image sizing */
     margin-right: 20px; /* Add space between the image and the text */
@@ -30,12 +47,6 @@
 .person-info {
     flex: 1; /* This allows the text section to fill the remaining space */
 }
-
-/*img {
-    width: 400px; 
-    height: 600px; 
-    object-fit: cover; 
-}*/
 
 .hero{
     width: 100%;
@@ -177,3 +188,27 @@ a{
     z-index: -1;
     opacity: 0.5;
 }
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a700ff;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a{
+    display: block;
+
+    text-decoration: none;
+    color: white;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
